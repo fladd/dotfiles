@@ -350,7 +350,7 @@ zstyle ':prompt:grml:left:setup' items rc change-root user path vcs percent
 
 
 # Tmux
-alias tmux="TERM=screen-256color /usr/bin/tmux -2"
+alias tmux="TERM=screen-256color tmux -2"
 
 
 # Antigen
