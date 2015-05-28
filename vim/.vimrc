@@ -59,6 +59,7 @@ filetype plugin indent on     " required!
 syntax enable
 set background=dark
 colorscheme solarized
+call togglebg#map("")
 
 " " Use modeline
 set modeline
@@ -94,7 +95,7 @@ set autochdir " Change working directory to directory of current file
 " " Python
 au BufNewFile,BufRead *.py,*pyw set filetype=python
 autocmd FileType python set omnifunc=pythoncomplete#Complete
-au FileType python map <f5> :w\|!ipython -c %run %
+"au FileType python map <f5> :w\|!ipython -c %run %
 au FileType python let python_highlight_all=1
 au FileType python let pymode_syntax_all=1
 au FileType python let g:pymode_rope_lookup_project = 0
